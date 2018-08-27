@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Xignite
 x-complete: 1
@@ -14,4 +13,42 @@ produces:
 - application/json
 consumes:
 - application/json
----
+paths:
+  /ListCountryCodes:
+    get:
+      summary: List Country Codes
+      description: Get all of the country codes available to query on.
+      operationId: postListcountrycodes
+      x-api-path-slug: listcountrycodes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - List
+      - Country
+      - Codes
+  /ListEventCodes:
+    get:
+      summary: List Event Codes
+      description: Get all of the event codes available to query on.
+      operationId: postListeventcodes
+      x-api-path-slug: listeventcodes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - List
+      - Event
+      - Codes

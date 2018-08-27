@@ -6,11 +6,62 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1067-gumro
 x-kinRank: "8"
 x-alexaRank: "4658"
 tags: Codes
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/codes/master/_listings/gumroad/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Gumroad - Get Products Offer Codes
+  x-api-slug: productsproduct-idoffer-codes-get
+  description: Retrieve all of the existing offer codes for a product. Either amount_cents
+    or percent_off will be returned depending if the offer code is a fixed amount
+    off or a percentage off. A universal offer code is one that applies to all products.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1067-gumroad.jpg
+  humanURL: http://gumroad.com
+  baseURL: https://api.gumroad.com//v2
+  tags: Commerce, Shopping, Social, Videos, Music, Documents, Videos, My API Stack,
+    Target, Stack Network, Media, Technology, internet, Marketplace, Services, API
+    Provider, Products, Profiles, Relative Data, Service API, General Data, Pedestal
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/codes/master/_listings/gumroad/productsproduct-idoffer-codes-get-openapi.md
+- name: Gumroad - Post Products Offer Codes
+  x-api-slug: productsproduct-idoffer-codes-post
+  description: Create a new offer code for a product. Default offer code is in cents.
+    A universal offer code is one that applies to all products.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1067-gumroad.jpg
+  humanURL: http://gumroad.com
+  baseURL: https://api.gumroad.com//v2
+  tags: Commerce, Shopping, Social, Videos, Music, Documents, Videos, My API Stack,
+    Target, Stack Network, Media, Technology, internet, Marketplace, Services, API
+    Provider, Products, Profiles, Relative Data, Service API, General Data, Pedestal
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/codes/master/_listings/gumroad/productsproduct-idoffer-codes-post-openapi.md
+- name: Gumroad - Get Products Offer Codes
+  x-api-slug: productsproduct-idoffer-codesid-get
+  description: Retrieve the details of a specific offer code of a product
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1067-gumroad.jpg
+  humanURL: http://gumroad.com
+  baseURL: https://api.gumroad.com//v2
+  tags: Commerce, Shopping, Social, Videos, Music, Documents, Videos, My API Stack,
+    Target, Stack Network, Media, Technology, internet, Marketplace, Services, API
+    Provider, Products, Profiles, Relative Data, Service API, General Data, Pedestal
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/codes/master/_listings/gumroad/productsproduct-idoffer-codesid-get-openapi.md
+- name: Gumroad - Put Products Offer Codes
+  x-api-slug: productsproduct-idoffer-codesid-put
+  description: Edit an existing products offer code.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1067-gumroad.jpg
+  humanURL: http://gumroad.com
+  baseURL: https://api.gumroad.com//v2
+  tags: Commerce, Shopping, Social, Videos, Music, Documents, Videos, My API Stack,
+    Target, Stack Network, Media, Technology, internet, Marketplace, Services, API
+    Provider, Products, Profiles, Relative Data, Service API, General Data, Pedestal
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/codes/master/_listings/gumroad/productsproduct-idoffer-codesid-put-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://gsa.per.diem.api.api.gallery.streamdata.io
